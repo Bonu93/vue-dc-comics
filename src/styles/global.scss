@@ -7,6 +7,12 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
 }
 
+#app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 img {
     max-width: 100%;
 }
@@ -21,7 +27,7 @@ a {
 .container {
     max-width: 1170px;
     margin: 0 auto;
-    padding: .5rem;
+    padding: 0 .5rem;
 }
 
 .text-center {
