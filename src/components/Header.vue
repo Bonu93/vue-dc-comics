@@ -2,11 +2,11 @@
     <header>
         <div class="container">
             <div class="columns">
-                <div class="brand">
+                <!-- <div class="brand"> -->
                     <img src="@/assets/img/dc-logo.png" alt="logo">
-                </div>
+                <!-- </div> -->
 
-                <nav>
+                <!-- <nav> -->
                     <ul>
                         <li v-for="(link, index) in navlist" :key="`link-${index}`"
                         :class="{active: link.current}"
@@ -15,7 +15,7 @@
                             <a :href="link.url"> {{ link.text }} </a>
                         </li>
                     </ul>
-                </nav>
+                <!-- </nav> -->
             </div>
         </div>    
     </header>
@@ -95,46 +95,39 @@ export default {
 
 <style lang="scss" scoped>
     .columns {
-        height: 100px;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        nav {
-            height: 100%;
-        }
-            ul {
-                height: 100%;
-                list-style: none;
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: flex-end;
+            align-items: center;
+            flex-grow: 1;
+        } li {
                 display: flex;
                 align-items: center;
-                li {
-                    display: flex;
-                    align-items: center;
-                    height: 100%;
-                    font-size: .8rem;
-                    margin: 1em;
-                    text-transform: uppercase;
-                    border-bottom: 5px solid transparent;
-                    cursor: pointer;
-                    &:hover,
-                    &.active {
-                        border-bottom-color: #0c7cec;
-                        & a {
-                            color: #0c7cec;
-                        }
-                    }
-
+                height: 100%;
+                font-size: .8rem;
+                margin-right: 1em;
+                &:last-child {
+                    margin: 0;
                 }
+                text-transform: uppercase;
+                border-bottom: 5px solid transparent;
+                cursor: pointer;
+                &:hover,
+                &.active {
+                    border-bottom-color: #0c7cec;
+                    & a {
+                        color: #0c7cec;
+                    }
+                }
+
             }
     }
 
-
-    .brand {
-        display: flex;
-        align-items: center;
-        img {
-            width: 80%;
-        }
+    img {
+        padding: .5rem;
     }
+    
 </style>
 
