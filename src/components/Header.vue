@@ -95,16 +95,44 @@ export default {
 
 <style lang="scss" scoped>
     .columns {
+        height: 100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        & ul {
+         ul {
+            height: 100%;
             list-style: none;
             display: flex;
-            & li {
+            align-items: center;
+            li {
+                display: flex;
+                align-items: center;
+                height: 100%;
+                font-size: .8rem;
                 margin: 1em;
+                text-transform: uppercase;
+                border-bottom: 5px solid transparent;
+                cursor: pointer;
+                &:hover,
+                &.active {
+                    border-bottom-color: #0c7cec;
+                    & a {
+                        color: #0c7cec;
+                    }
+                }
+
             }
         }
+    }
+
+    nav {
+        height: 100%;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 </style>
 
