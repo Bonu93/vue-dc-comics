@@ -21,6 +21,9 @@ footer {
                     margin: 5px 0;
                     a {
                         color: grey;
+                        &:hover {
+                            color: white;
+                        }
                     }
                 }
             }

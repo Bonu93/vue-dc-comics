@@ -1,18 +1,19 @@
 <template>
   <main>
       <div class="container">
-          <div class="main-content">
-             
-          </div>
+           <Gallery />
       </div>
   </main>
 </template>
 
 <script>
-
+import Gallery from '@/components/Gallery.vue'
 
 export default {
     name: 'Main',
+    components: {
+        Gallery,
+    },
 
     data () {
         return {
