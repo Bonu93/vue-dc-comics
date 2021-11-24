@@ -1,6 +1,8 @@
 <template>
   <div class="comic-card">
-    <img :src="url" alt="title">
+    <div class="image">
+        <img :src="url" alt="title">
+    </div>
     <h3>{{ title }}</h3>
   </div>
 </template>
@@ -21,12 +23,20 @@ export default {
     .comic-card {
         display: flex;
         flex-direction: column;
-        img {
+        h3 {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        .image {
             width: 100%;
-            height: 160px;
-            object-fit: cover;
-            object-position: top;
-
+            height: 170px;
+            margin-bottom: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
         }
         
     }

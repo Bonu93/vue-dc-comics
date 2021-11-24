@@ -50,3 +50,4 @@ export default [
         current: false,
     },
 ];
+

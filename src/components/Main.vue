@@ -2,6 +2,9 @@
   <main>
       <div class="container">
            <Gallery />
+           <div class="cta">
+               <button>Load More</button>
+           </div>
       </div>
   </main>
 </template>

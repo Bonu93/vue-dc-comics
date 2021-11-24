@@ -10,6 +10,8 @@
     <!-- main -->
     <Main />
 
+    <Bluebanner />
+
     <!-- footer -->
     <Footer />
   </div>
@@ -21,6 +23,8 @@ import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
 import Hero from '@/components/Hero.vue';
+import Bluebanner from '@/components/Bluebanner.vue';
+
 
 
 export default {
@@ -30,6 +34,7 @@ export default {
     Main, 
     Footer,
     Hero,
+    Bluebanner,
   }
 }
 </script>
