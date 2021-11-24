@@ -4,6 +4,9 @@
     <!-- header  -->
     <Header />
 
+    <!-- hero  -->
+    <Hero />
+
     <!-- main -->
     <Main />
 
@@ -17,6 +20,8 @@
 import Header from '@/components/Header.vue';
 import Main from '@/components/Main.vue';
 import Footer from '@/components/Footer.vue';
+import Hero from '@/components/Hero.vue';
+
 
 export default {
   name: 'App',
@@ -24,10 +29,12 @@ export default {
     Header,
     Main, 
     Footer,
+    Hero,
   }
 }
 </script>
 
 <style lang="scss">
 @import '@/styles/global';
+@import '@/styles/utilities';
 </style>

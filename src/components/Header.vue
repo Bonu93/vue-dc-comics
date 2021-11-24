@@ -22,8 +22,10 @@
 </template>
 
 <script>
+
 export default {
     name: 'Header',
+    
     data () {
         return {
             
@@ -94,40 +96,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    .columns {
-        display: flex;
-        ul {
-            display: flex;
-            list-style: none;
-            justify-content: flex-end;
-            align-items: center;
-            flex-grow: 1;
-        } li {
-                display: flex;
-                align-items: center;
-                height: 100%;
-                font-size: .8rem;
-                margin-right: 1em;
-                &:last-child {
-                    margin: 0;
-                }
-                text-transform: uppercase;
-                border-bottom: 5px solid transparent;
-                cursor: pointer;
-                &:hover,
-                &.active {
-                    border-bottom-color: #0c7cec;
-                    & a {
-                        color: #0c7cec;
-                    }
-                }
-
-            }
-    }
-
-    img {
-        padding: .5rem;
-    }
+    @import '@/styles/header'
     
 </style>
 

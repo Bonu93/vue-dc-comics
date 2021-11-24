@@ -193,75 +193,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-    footer {
-        color: white;
-        background-image: url(../assets/img/footer-bg.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        .footer-nav {
-            display: flex;
-            padding: 2rem 0;
-            background-image: url(../assets/img/dc-logo-bg.png);
-            background-repeat: no-repeat;
-            background-position-x: right;
-            background-position-y: center;
-            background-size: 45%;
-            .col {
-                margin-right: 2rem;
-                ul {
-                    list-style: none;
-                    font-size: .7rem;
-                    li {
-                        display: flex;
-                        margin: 5px 0;
-                        a {
-                            color: grey;
-                        }
-                    }
-                }
-            }
-        }
-    
-    }
-
-    .footer-cta {
-        background-color: #303030;
-        padding: 2rem;
-        .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .cta {
-                button {
-                        cursor: pointer;
-                        background: transparent;
-                        color: white;
-                        border: 3px solid #0282F9;
-                        text-transform: uppercase;
-                        padding: 1rem;
-                    }
-            }
-            .social {
-                display: flex;
-                align-items: center;
-                h4 {
-                    color: #0282F9;
-                    text-transform: uppercase;
-                }
-                .social-links {
-
-                    img {
-                        margin: 0 .5rem;
-                    }
-                }
-            }
-        }
-    }
-
-    h4 {
-        margin: 1rem 0;
-    }
-
+   @import '@/styles/footer.scss';
     
     
 </style>
